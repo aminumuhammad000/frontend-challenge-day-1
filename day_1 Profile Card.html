@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Day 1 HTML | CSS | JS</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ece5ac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section{
+    background-color: white;
+    height: 75%;
+    width: 350px;
+    margin: 8%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px gray;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    background-color: #8b1414e7;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px 0px 20px 0px;
+
+}
+.head img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.text{
+    margin-top: 10px;
+    background-color: transparent;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+.text h1{
+    color: #2e2b2b;
+    font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .3rem;
+    /* font-variant: small-caps; */
+}
+.text button{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px
+}
+.button{
+    /* margin: 0px 0px 20px 0px ; */
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 100%;
+    height: 80px;
+}
+.button button{
+    cursor: pointer;
+    color: gray;
+    background-color: transparent;
+    border: none;
+    width: 40%;
+    height: 80%;
+    outline: none;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: 1px solid gray;
+}
+button:not(.active):hover{
+    color: #fff;
+    background-color: rgb(248, 87, 114);
+    cursor: pointer;
+}
+.button .active{
+    color: #fff;
+    background-color: rgb(248, 87, 114);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+</style>
+<body>
+    <section>
+        <div class="head">
+            <img src="amee no bg.png" alt="">
+        </div>
+
+        <div class="text">
+            <center>
+            <h1>Aminu Amee</h1>
+            <h5 style="color: gray; padding: 10px;"><a href="">@twitter</a></h5>
+            <div style="padding: 20px;">  
+            <button><a href="https://web.facebook.com/profile.php?id=61550987333969&_rdc=1&_rdr"><i class="fa-brands fa-facebook"></i></a></button>
+            <button><a href="https://x.com/Amee00015"><i class="fa-brands fa-x-twitter"></i></a></button>
+            <button><a href="https://www.linkedin.com/in/aminu-muhammad-773635320/"><i class="fa-brands fa-linkedin"></i></a></button>
+            <button><a href="https://github.com/aminumuhammad000"><i class="fa-brands fa-github"></i></a></button>
+        </div>
+
+        <p style="font-size: 1.0rem; font-family: serif; font-weight: 400; text-align: center; padding: 10px;">Aminu Muhammad, a developer and researcher, focuses on Python, machine learning, and youth tech innovation</p>
+        </center>
+        </div>
+
+        <div>
+            <div class="button">
+                <button class="active">Follow</button>
+                <button>Massege</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
